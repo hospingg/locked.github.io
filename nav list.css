@@ -1,0 +1,245 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+*::selection{
+    background-color:#302929
+}
+img{
+    user-select: none;
+}
+.welcome-page, .next-page {
+        width: 90%;
+    } 
+body{
+    background-color: #272121;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    text-indent: 20px;
+    margin: 5px;
+    color: azure;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+.welcome-page, .next-page, .containers {
+    width: 75%;
+} 
+ul{
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    color: azure;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: "Pangolin", cursive;
+    font-style: normal;
+    transform: scale(1, 1.05);
+}
+span{
+    font-family: "Pangolin", cursive;
+}
+.name{
+    color: #FF4D00;
+    font-size: 4.06rem;
+    width: 100%;
+}
+.hot-bar svg{
+    display: none;
+    width: 50px;
+    margin: 10px 30px 10px auto;
+    cursor: pointer;
+}
+.hot-bar a:last-child:active .nav-list{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 69px;
+    background-color: #302929;
+    width: 100%;
+}
+.hot-bar a img{
+    display: none;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+li{
+    list-style: none;
+    margin: 7px 15px;
+    border: 0;
+    height: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.logo-container{
+    background-color: #302929;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.logo-container h1{
+    margin: 5px 0 0;
+}
+.hot-bar{
+    background-color: #302929;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 2;
+    top: -1px;
+    align-items: center;
+}
+.nav-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+
+.nav-list li{
+    align-self: center;
+    height: 55px;
+    text-align: center;
+    width: 20%;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+.nav-list li a{
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    font-family: "Pangolin", cursive;
+    font-size: 20px;
+    color: #ffff;
+}
+.nav-list li span{
+    line-height: 50px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.nav-list li:hover{
+    background-color: #272121;
+    transition: all .15s ease;
+    font-size: 17.25px;
+    
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text-container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-container h1:first-child{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+footer{
+    min-height: 50px;
+    background-color: #1d1919;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+footer p{
+    font-family: "Pangolin", cursive;
+    font-size: 1.2rem;
+    text-indent: 0;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    color:#524e4e;
+}
+@media screen and (max-width: 720px) {
+    .nav-list{
+        display:none;
+    }
+    .hot-bar svg, .hot-bar a img{
+        display:block;
+    }
+    .name{
+        font-size: 10vw;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+    }
+    .text-container h1:first-child{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .logo-container{
+        display: none;
+    }
+    .hot-bar {
+        flex-direction: row;
+    }
+    .welcome-page, .next-page, .containers {
+        width: 90%;
+    } 
+    .text-container{
+        width: 100%;
+    }
+    .text-container h2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+}
+.nav-list-mobile{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    background-color: #302929;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 26%) 0px 10px 20px 0px
+}
+#w-100{
+    width: 100%;
+}

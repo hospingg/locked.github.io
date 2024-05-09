@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../nav list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../nav-list.js" defer></script>
+
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js" defer></script>
+    
+    <script src="../script.js" defer></script>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>LOCKED UA</title>
+</head>
+<body>
+    <header>
+        <div class = "logo-container">
+            <a href="../index.html"><img src="../photos/logo2.png" alt="logotype" width="400px" height="100px"></a>
+            <h1 style="font-size: 17px;">квест-кімнати м. Запоріжжя</h1>
+        </div>
+    </header>
+
+    <div class="hot-bar">
+        <a href="index.html"><img src="../photos/logo2.png" alt="logotype" width="200px" height="50px"></a>
+        <ul class="nav-list">
+            <li>
+                <a href="../About Us/index.html"><span>Про нас</span></a>
+            </li>
+            <li>
+                <a href="../Reviews/index.html"><span>Відгуки</span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Кімнати</span></a>
+            </li>
+            <li>
+                <a href="../Rules/index.html"><span>Правила</span></a>
+            </li>
+            <li>
+                <a href="../Contacts/index.html"><span>Контакти</span></a>
+            </li>
+        </ul>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#FF4D00" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#FF4D00" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#FF4D00" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+    </div>
+    <div class = "main">
+        <div class = "welcome-page">
+            <div class = "text-container">
+                <h1>Пошук</h1>
+                <h1 class = "name">КІМНАТИ</h1>
+                
+            </div>
+        </div>
+        <div class="next-page">
+            <div class="searching-system">
+                <input type="text" id="search-input" placeholder="здійснити пошук">
+                <div class="filter-search">
+                    <svg @click.prevent="openFilter" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="40" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V6.17157C22 6.96722 21.6839 7.73028 21.1213 8.29289L15.2929 14.1213C15.1054 14.3089 15 14.5632 15 14.8284V17.1716C15 17.9672 14.6839 18.7303 14.1213 19.2929L11.9193 21.4949C10.842 22.5722 9 21.8092 9 20.2857V14.8284C9 14.5632 8.89464 14.3089 8.70711 14.1213L2.87868 8.29289C2.31607 7.73028 2 6.96722 2 6.17157V5Z" fill="#1B1717"/>
+                    </svg>
+                        <button @click.prevent="searchRoom()" > Пошук </button>
+                </div>
+            </div>
+            <div class="filter" style="display: none;">
+                <div>
+                    <h3>Складність:</h3>
+                    <select name="difficulty" placeholder="вкажіть складність">
+                        <option value="не зазначено">не зазначено</option>
+                        <option value="легко">легко</option>
+                        <option value="середнє">середнє</option>
+                        <option value="складне">складне</option>
+                        <option value="апокалипсис">апокалипсис</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Кількість осіб:</h3>
+                    <div class="range">
+                        <div class="range-value" id="rangeV"></div>
+                        <input id="range" type="range" min="2" value="2" max="12" name="dificulty" step="1" placeholder="вкажіть кількість осіб" >
+                    </div>
+                    
+                </div>
+                <div>
+                    <h3>Наявність актора:</h3>
+                    <select name="actor" placeholder="вкажіть наявність актора">
+                        <option value="не зазначено">не зазначено</option>
+                        <option value="так">так</option>
+                        <option value="ні">ні</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Ціна:</h3>
+                    <div><h3>від:</h3>
+                        <input type="number" name="priceOne" min="0" max="1100" value="0" step="100">
+                        <h3>до:</h3>
+                        <input type="number" name="priceTwo" min="0" max="1200" value="1200" step="100"></div>
+                </div>
+                <div>
+                    <h3>Жанри:</h3>
+                    <select name="genre" placeholder="вкажіть жанр">
+                        <option value="не зазначено">не зазначено</option>
+                        <option value="горрор">горрор</option>
+                        <option value="пригодницький">пригодницький</option>
+                        <option value="фантастика">фантастика</option>
+                        <option value="інтелектуальний">інтелектуальний</option>
+                        <option value="детектив">детектив</option>
+                        <option value="психологічний трилер">психологічний трилер</option>
+                        <option value="загадковий">загадковий</option>
+                        <option value="містичний">містичний</option>
+                        <option value="фентезі">фентезі</option>
+                        <option value="наукова фантастика">наукова фантастика</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="room-store">
+                
+                <h2 class="search-title">Пошук</h2>
+                <div class="search-list">
+                    <ul>
+                        <li v-for="item in rooms" v-if="searchCards.includes(item.id)">
+                            <a class="room-card" :href=" '../Room/index.html#' + item.id ">
+                                <img :src="'../photos/Poster' + item.id + '.jpg'" alt="poster">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="another">
+                    <h2>Найпопулярніші</h2>
+                    <div class="recommends">
+                        <ul>
+                            <li v-for="item in rooms" v-if="item.popularity==1">
+                                <a class="room-card" :href=" '../Room/index.html#' + item.id ">
+                                    <img :src="'../photos/Poster' + item.id + '.jpg'" alt="poster">
+                                    <!-- <div class="details">
+                                        <h3>{{item.name}}</h3>
+                                    </div> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Новинки</h2>
+                    <div class="new">
+                        <ul>
+                            <li v-for="item in rooms" v-if="item.new==1">
+                                <a class="room-card" :href=" '../Room/index.html#' + item.id ">
+                                    <img :src="'../photos/Poster' + item.id + '.jpg'" alt="poster">
+                                    <!-- <div class="details">
+                                        <h3>{{item.name}}</h3>
+                                    </div> -->
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Всі права захищені ©2024</p>
+    </footer>
+</body>
+</html>
