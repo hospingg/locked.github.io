@@ -1,0 +1,49 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 634 634" width="634" height="634">
+	<title>ПР14</title>
+	<defs>
+		<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-9.26,-530.51,530.51,-9.26,317.775,419.302)">
+			<stop offset="0" stop-color="#3a1403"/>
+			<stop offset=".468" stop-color="#1f0b02"/>
+			<stop offset=".99" stop-color="#000000"/>
+		</radialGradient>
+		<radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-10.415,-596.674,596.674,-10.415,314.767,-55.286)">
+			<stop offset="0" stop-color="#000000"/>
+			<stop offset=".498" stop-color="#ff4d00"/>
+			<stop offset="1" stop-color="#000000"/>
+		</radialGradient>
+		<radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-47.63,-544.415,544.415,-47.63,229.517,-30.956)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0"/>
+			<stop offset=".008" stop-color="#000000" stop-opacity="0"/>
+			<stop offset=".51" stop-color="#000000" stop-opacity=".4"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="g4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-58.287,-666.227,666.227,-58.287,402.356,-31.811)">
+			<stop offset="0" stop-color="#000000" stop-opacity="0"/>
+			<stop offset=".002" stop-color="#000000" stop-opacity="0"/>
+			<stop offset=".49" stop-color="#000000" stop-opacity=".53"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</radialGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #160802 } 
+		.s2 { fill: url(#g2) } 
+		.s3 { fill: url(#g3) } 
+		.s4 { fill: url(#g4) } 
+		.s5 { fill: #4c1700 } 
+		.s6 { fill: #000000 } 
+	</style>
+	<path id="Шар 12" fill-rule="evenodd" class="s0" d="m165.2 405.8c0 0-77.7-9.3-106 49-28.3 58.3-27 143.6-11.9 151.5 15.2 8 504.8 8 521.3 0.8 29.1-12.7 29.1-153.9-27.9-191.5-20.2-13.3-50.6-17-89.5-14.8"/>
+	<path id="Шар 13" fill-rule="evenodd" class="s1" d="m158 404.6c0 0 152.1-4.6 303.9-5 25.6-0.1 40.8 1-2.1 12.4-31 8.2-231.1 14.3-275.7 5.7-44.6-8.7-61.8-14-26.1-13.1z"/>
+	<g id="Папка 3">
+		<path id="Шар 7" fill-rule="evenodd" class="s2" d="m305 40.1c0 0-243.1-77.2-283.8 162.7-40.7 239.9 166.2 171.1 166.2 171.1 0 0 51.9 17.4 118.5 16 90.5-2 97-14 100.3-13.8 40.7 2.9 88.4 5.7 129-4 102.5-24.6 165.8-436.5-215.7-329.6"/>
+		<path id="Шар 8" fill-rule="evenodd" class="s3" d="m304.1 42.3c0 0-229.7 55.5-119.3 331 0.9 2.2 2.7 2.8 2.1 0.6-74.3-283.2 117-331.6 117.2-331.6z"/>
+		<path id="Шар 8 copy" fill-rule="evenodd" class="s4" d="m404.4 376.3c-15.9 20.1 232.1-186.6-80.1-334-1.5-0.7-3.7 0.1-1.5 1.1 245.5 116.9 110.2 296.6 81.6 332.9z"/>
+		<path id="Шар 9" fill-rule="evenodd" class="s5" d="m212.5 115.5l13 35 34.3-47.3 9.2 34.1 0.5 28.6 11.7-36.4-4.3 71.4-28.9 34.8-16.6-24.4-14 15.5-11.3-43.6z"/>
+		<path id="Шар 9 copy" fill-rule="evenodd" class="s5" d="m414.2 111.8l-9.3 37.2-41.8-47.7-5.4 36 3.1 29.9-16.8-37.5 13.5 74.5 34.6 34.9 14.3-26.3 16.6 15.5 6.3-46.1z"/>
+		<path id="Шар 9 copy 3" fill-rule="evenodd" class="s6" d="m411.6 119.6l-8.6 34.6-39-44.4-5 33.6 2.9 27.8-15.7-34.9 12.6 69.4 32.2 32.5 13.4-24.5 15.4 14.4 5.9-42.9z"/>
+		<path id="Шар 10" fill-rule="evenodd" class="s5" d="m176.1 278.1l21.1 53.7 33-16 36 20 50-17 33 13 61-15 44-36 4-19-52.9 42.4-51.7 9.3-34.4-19.7-48 21-40-25-24 18z"/>
+		<path id="Шар 10 copy" fill-rule="evenodd" class="s6" d="m177.5 281.6l21.1 49.9 32.4-15.7 35.3 19.6 49.1-16.7 32.4 12.8 59.9-14.7 43.1-35.3 4-18.7-52 41.7-50.6 9-33.8-19.3-47.2 20.6-39.2-24.5-23.6 17.7z"/>
+		<path id="Шар 9 copy 2" fill-rule="evenodd" class="s6" d="m214.9 123.3l12.2 32.6 32-44.1 8.5 31.8 0.5 26.6 10.9-33.9-4 66.6-26.9 32.4-15.5-22.8-13.1 14.5-10.5-40.6z"/>
+	</g>
+</svg>
