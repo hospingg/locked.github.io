@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@200&display=swap');
+
 html{
     font-size: 16px;
 }
@@ -59,7 +61,7 @@ html{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@200&display=swap');
+
 @media screen and (max-width: 1335px) {
     .welcome-page{
         flex-wrap: wrap;

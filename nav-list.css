@@ -24,7 +24,6 @@ p{
     font-size: 1.5em;
     font-weight: bold;
     font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     
 }
@@ -226,9 +225,8 @@ body {
     body {
         scrollbar-color: var(--sb-thumb-color)
                        var(--sb-track-color);
-    }
-  }
-
+    }}
+    
 @media screen and (max-width: 720px) {
     .nav-list{
         display:none;
