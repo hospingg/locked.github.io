@@ -189,6 +189,34 @@ footer p{
     padding: 0;
     color:#524e4e;
 }
+
+body {
+    --sb-track-color: #302929;
+    --sb-thumb-color: #FF4D00;
+    --sb-size: 11px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 9px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 9px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
 @media screen and (max-width: 720px) {
     .nav-list{
         display:none;
