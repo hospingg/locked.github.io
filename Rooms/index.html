@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../nav list.css">
+    <link rel="stylesheet" href="../nav-list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="../photos/icon.svg" type="image/x-icon">
@@ -18,16 +18,16 @@
 <body>
     <header>
         <div class = "logo-container">
-            <a href="../index.html"><img src="../photos/logo2.png" alt="logotype" width="400px" height="100px"></a>
+            <a href="../index.html"><img src="../photos/logo2.png" alt="logotype"></a>
             <h1 style="font-size: 17px;">квест-кімнати м. Запоріжжя</h1>
         </div>
     </header>
 
     <div class="hot-bar">
-        <a href="index.html"><img src="../photos/logo2.png" alt="logotype" width="200px" height="50px"></a>
+        <a href="../index.html"><img src="../photos/logo2.png" alt="logotype" id="logotype"></a>
         <ul class="nav-list">
             <li>
-                <a href="../About Us/index.html"><span>Про нас</span></a>
+                <a href="../About-Us/index.html"><span>Про нас</span></a>
             </li>
             <li>
                 <a href="../Reviews/index.html"><span>Відгуки</span></a>
@@ -66,7 +66,7 @@
             <div class="filter" style="display: none;">
                 <div>
                     <h3>Складність:</h3>
-                    <select name="difficulty" placeholder="вкажіть складність">
+                    <select name="difficulty">
                         <option value="не зазначено">не зазначено</option>
                         <option value="легко">легко</option>
                         <option value="середнє">середнє</option>
@@ -78,13 +78,13 @@
                     <h3>Кількість осіб:</h3>
                     <div class="range">
                         <div class="range-value" id="rangeV"></div>
-                        <input id="range" type="range" min="2" value="2" max="12" name="dificulty" step="1" placeholder="вкажіть кількість осіб" >
+                        <input id="range" type="range" min="2" value="2" max="12" name="dificulty" step="1">
                     </div>
                     
                 </div>
                 <div>
                     <h3>Наявність актора:</h3>
-                    <select name="actor" placeholder="вкажіть наявність актора">
+                    <select name="actor">
                         <option value="не зазначено">не зазначено</option>
                         <option value="так">так</option>
                         <option value="ні">ні</option>
@@ -99,7 +99,7 @@
                 </div>
                 <div>
                     <h3>Жанри:</h3>
-                    <select name="genre" placeholder="вкажіть жанр">
+                    <select name="genre">
                         <option value="не зазначено">не зазначено</option>
                         <option value="горрор">горрор</option>
                         <option value="пригодницький">пригодницький</option>
